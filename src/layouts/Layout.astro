@@ -1,22 +1,67 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="generator" content={Astro.generator} />
+	<title>Astro Basics</title>
+	<style>
+		/* Biloxi Script Font */
+		@font-face {
+			font-family: 'BiloxiScript';
+			src: url('/assets/BiloxiScript.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+		/* Biloxi Thin Font */
+		@font-face {
+			font-family: 'BiloxiThin';
+			src: url('/assets/BiloxiThin.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		/* Gill Sans Light Font */
+		@font-face {
+			font-family: 'GillSans-Light';
+			src: url('/assets/GillSans-Light.otf') format('opentype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		html, body {
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			padding:0;
+			
+		}
+
+		h1 {
+			font-size: 142px;
+			text-align: center;
+			color:#444;
+			font-family: 'BiloxiScript', sans-serif;
+			font-weight:400;
+			margin:0;
+		}
+
+		h2 {
+			text-align: center;
+			color:#444;
+			font-family: 'GillSans-Light', sans-serif; 
+			text-transform:uppercase;
+			font-weight:300;
+			font-size:30px;
+			margin-top:0;
+		}
+	</style>
+</head>
+<body>
+   <h1>janelle Carothers</h1>
+   <h2>Costume designer + stylist</h2>
+   <slot/>
+</body>
+</html>
